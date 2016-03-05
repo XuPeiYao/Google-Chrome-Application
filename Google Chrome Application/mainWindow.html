@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript Google Chrome Application</title>
+    <link href="lib/material-design-icons/material-icons.css" rel="stylesheet" />
+    <link href="styles/defaultWindow.css" rel="stylesheet" />
+    <style>
+        #editor{
+            height:calc(100% - 30px);
+            width:100%;
+            border:0;
+            padding:0;
+        }
+
+        
+        #wordList{
+            width:100%;
+            height:30px;
+            position:fixed;
+            bottom:0;
+            font-size:20px;
+            background:rgba(0,0,0,0.6);
+            overflow-y:scroll;
+        }
+
+        .wordItem{
+            display:inline-block;
+            background-color:black;
+            line-height: 20px;
+            border: solid yellow 1px;
+            color:white;
+            margin-left:5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="draggable">
+        <div class="title">
+            TypeScript Google Chrome Application
+        </div>        
+        <div class="controls">
+            <a id="minimize" class="button" href="#" title="最小化"><i class="material-icons">remove</i></a>
+            <a id="maximize" class="button" href="#" title="最大化"><i class="material-icons">crop_square</i></a>
+            <a id="restore" class="button" href="#" title="向下還原" hidden><i class="material-icons">flip_to_front</i></a>
+            <a id="close" class="button" href="#" title="關閉"><i class="material-icons">close</i></a>
+        </div>
+    </header>
+    <content>
+        <textarea id="editor" style="font-size:20px;line-height:20px;"></textarea>
+        <div id="wordList">
+            <a class="wordItem" href="#"></a>
+        </div>
+    </content>
+    <script src="scripts/defaultWindow.js"></script>
+    <script src="mainWindow.js"></script>
+</body>
+</html>

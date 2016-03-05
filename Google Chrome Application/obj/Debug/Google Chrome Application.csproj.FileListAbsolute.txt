@@ -1,0 +1,5 @@
+D:\Google Chrome Application\Google Chrome Application\bin\Google Chrome Application.dll
+D:\Google Chrome Application\Google Chrome Application\bin\Google Chrome Application.pdb
+D:\Google Chrome Application\Google Chrome Application\obj\Debug\Google Chrome Application.csprojResolveAssemblyReference.cache
+D:\Google Chrome Application\Google Chrome Application\obj\Debug\Google Chrome Application.dll
+D:\Google Chrome Application\Google Chrome Application\obj\Debug\Google Chrome Application.pdb

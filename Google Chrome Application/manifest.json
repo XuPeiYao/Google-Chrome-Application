@@ -1,0 +1,20 @@
+﻿{
+  "name": "TypeScript Google Chrome Application",
+  "description": "My first Chrome App.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [
+        "nativeExtensions/chrome/chrome-app-windowAsync.js",
+        "startup.js"
+      ]
+    }
+  },
+  "permissions": [
+    "*://www.google.com.tw/"
+  ],
+  "icons": {
+    "512": "images/icons/app.png"
+  }
+}

@@ -1,0 +1,56 @@
+﻿html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+body > header{
+    width:100%;
+    height:46px;
+    background-color:#495171;
+    display:inline-block;
+    line-height:46px;
+    color:white;
+    font-size:10pt;
+    margin-bottom:-3px;
+}
+body > header[focus]{
+    background-color:#3F4663;
+}
+body > header > .title{
+    float:left;
+    margin-left: 15px;
+    width:calc(100% - 100px);
+    font-weight:bold;
+
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+}
+body > header > .controls{
+    position: fixed;
+    right: 10px;
+}
+body > header .material-icons{
+    line-height:46px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+body > header > .controls > .button{
+    color:#6F7D9C;
+    cursor:pointer;
+    padding:0 3px 0 3px;
+    -webkit-app-region: no-drag;
+}
+body > header > .controls > .button :hover{
+    color:white; 
+}
+body > content {
+    display:block;
+    width:100%;
+    height:calc(100% - 46px);
+}
+
+.draggable{
+    -webkit-app-region: drag;
+}
